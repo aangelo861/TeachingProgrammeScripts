@@ -4,14 +4,7 @@ A set of **[Office Scripts](https://learn.microsoft.com/en-us/office/dev/scripts
 
 These scripts target the **`ExcelScript` API** and run from the **Automate** tab in Excel for the web / Microsoft 365. They are **not** Node.js — you cannot run them with `ts-node`/`tsc`; they execute against a live workbook.
 
----
-
-## ⚠️ Before you publish or share
-
-- **Never commit the data workbook.** Any `.xlsx` here contains **real trainee names and NHS email addresses** (175+ in the source file). The included `.gitignore` excludes `*.xlsx`/`*.xls`/`*.csv` — keep it.
-- The `.ts` files have been **scrubbed** of personal data. Email recipients, the Cloudflare Worker URL, and the Google Docs template IDs are now **placeholder constants** you must fill in (see [Configuration](#configuration)).
-- Your **Resend API key is *not* in these scripts** and must never be — it lives only inside the Cloudflare Worker as a secret. Keep it that way.
-- If the workbook was ever committed before now, a new commit isn't enough — purge it from git history (`git filter-repo`) and rotate any exposed secret.
+the workbook was ever committed before now, a new commit isn't enough — purge it from git history (`git filter-repo`) and rotate any exposed secret.
 
 ---
 
