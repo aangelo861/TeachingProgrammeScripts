@@ -4,7 +4,6 @@ A set of **[Office Scripts](https://learn.microsoft.com/en-us/office/dev/scripts
 
 These scripts target the **`ExcelScript` API** and run from the **Automate** tab in Excel for the web / Microsoft 365. They are **not** Node.js — you cannot run them with `ts-node`/`tsc`; they execute against a live workbook.
 
-the workbook was ever committed before now, a new commit isn't enough — purge it from git history (`git filter-repo`) and rotate any exposed secret.
 
 ---
 
